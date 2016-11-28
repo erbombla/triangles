@@ -17,9 +17,9 @@ describe('Triangle') do
   end
 
   describe('#scalene') do
-    it "return false if not side are =" do
+    it "return true if not side are =" do
       test_triangle = Triangle.new(12, 10, 2)
-      expect(test_triangle.scalene?()).to(eq(false))
+      expect(test_triangle.scalene?()).to(eq(true))
     end
   end
 

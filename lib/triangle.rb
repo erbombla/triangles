@@ -14,11 +14,9 @@ class Triangle
 
     def scalene?
        @side1 != @side2  or @side2 != @side3
-       false
     end
 
     def not_triangle?
-      @side1 + @side2 <= @side3
-      true
+      @side1 + @side2 <= @side3 or @side3 + @side1 <= @side2 or @side3 + @side2 <= @side1
     end
 end
