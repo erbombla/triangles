@@ -1,18 +1,18 @@
 class Triangle
-  define_method(:initialize) do | side1, side2, side3 |
+  def initialize(side1, side2, side3)
     @side1 = side1
     @side2 = side2
     @side3 = side3
   end
-  define_method(:equilateral?) do
+  def equilateral?
      @side1 == @side2  and @side2 == @side3
   end
 
-  define_method(:isosceles?) do
+  def isosceles?
      @side1 == @side2  or @side2 == @side3
   end
 
-    define_method(:scalene?) do
+    def scalene?
        @side1 != @side2  or @side2 != @side3
        false
     end
