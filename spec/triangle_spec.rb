@@ -15,4 +15,11 @@ describe('Triangle') do
       expect(test_triangle.isosceles?()).to(eq(true))
     end
   end
+
+  describe('#scalene') do
+    it "return false if not side are =" do
+      test_triangle = Triangle.new(12, 10, 2)
+      expect(test_triangle.scalene?()).to(eq(false))
+    end
+  end
 end

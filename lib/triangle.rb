@@ -11,4 +11,9 @@ class Triangle
   define_method(:isosceles?) do
      @side1 == @side2  or @side2 == @side3
   end
+
+    define_method(:scalene?) do
+       @side1 != @side2  or @side2 != @side3
+       false
+    end
 end
