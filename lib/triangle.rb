@@ -16,4 +16,9 @@ class Triangle
        @side1 != @side2  or @side2 != @side3
        false
     end
+
+    def not_triangle?
+      @side1 + @side2 <= @side3
+      true
+    end
 end

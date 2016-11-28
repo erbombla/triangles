@@ -22,4 +22,11 @@ describe('Triangle') do
       expect(test_triangle.scalene?()).to(eq(false))
     end
   end
+
+  describe('#not_triangle') do
+    it "return ture if  the sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side" do
+      test_triangle = Triangle.new(5, 5, 14)
+      expect(test_triangle.not_triangle?()).to(eq(true))
+    end
+  end
 end
